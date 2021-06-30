@@ -21,7 +21,7 @@ int main(){
 		Juguete *myJuguete = FabricaJuguetes::crearJuguete(tipo);
 		if(myJuguete){
 			myJuguete->verProducto();
-			//delete myJuguete;
+			delete myJuguete;
 		}
 	}
 	cout<<"Finalizando..."<<'\n';
