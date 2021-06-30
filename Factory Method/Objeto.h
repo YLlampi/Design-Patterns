@@ -15,7 +15,7 @@ class Juguete{
 			this->nombre = nombre;
 			this->precio = precio;
 		}
-		//virtual ~Juguete();
+		virtual ~Juguete(){}
 		
 		virtual void prepararPartes() = 0;
 		virtual void combinarPartes() = 0;
@@ -28,7 +28,7 @@ class Carro : public Juguete{
 		
 	public:
 		Carro(string nombre, float precio) : Juguete(nombre, precio){}
-		//~Carro();
+		~Carro(){}
 		void prepararPartes() {cout<<"Preparando partes del Carro"<<'\n';}
 		void combinarPartes() {cout<<"Combinando partes del Carro"<<'\n';}
 		void ensamblarPartes() {cout<<"Ensamblando partes del Carro"<<'\n';}
@@ -40,7 +40,7 @@ class Bicicleta : public Juguete{
 		
 	public:
 		Bicicleta(string nombre, float precio) : Juguete(nombre, precio){}
-		//~Bicicleta();
+		~Bicicleta(){}
 		void prepararPartes() {cout<<"Preparando partes de la Bicicleta"<<'\n';}
 		void combinarPartes() {cout<<"Combinando partes de la Bicicleta"<<'\n';}
 		void ensamblarPartes() {cout<<"Ensamblando partes de la Bicicleta"<<'\n';}
@@ -52,7 +52,7 @@ class Avion : public Juguete{
 		
 	public:
 		Avion(string nombre, float precio) : Juguete(nombre, precio){}
-		//~Avion();
+		~Avion(){}
 		void prepararPartes() {cout<<"Preparando partes del Avion"<<'\n';}
 		void combinarPartes() {cout<<"Combinando partes del Avion"<<'\n';}
 		void ensamblarPartes() {cout<<"Ensamblando partes del Avion"<<'\n';}
