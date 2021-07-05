@@ -25,6 +25,7 @@ Singleton* Singleton::instance=NULL;
 
 int main(){
 	Singleton *s = Singleton::getInstance();
+	Singleton *p = Singleton::getInstance();
 
 	return 0;
 }
